@@ -13,3 +13,12 @@ UserSchema.pre("save", async function(next) {
 });
 
 ```
+
+### Using Docker
+
+```
+docker pull tutum/mongodb
+
+docker run -d -p 27017:27017 -p 28017:28017 -e AUTH=no tutum/mongodb
+
+```
